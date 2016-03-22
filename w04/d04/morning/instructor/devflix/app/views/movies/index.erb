@@ -1,0 +1,4 @@
+<h1>Top Movies of 2015</h1>
+<% @movies.each do |movie| %>
+  <p><a href="/movies/<%= movie.id %>"><%= movie.title %></a></p>
+<% end %>

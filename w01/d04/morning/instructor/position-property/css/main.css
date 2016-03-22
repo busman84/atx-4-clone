@@ -1,0 +1,29 @@
+body {
+    background: #ccc;
+}
+
+ul {
+    position: relative;
+}
+
+li {
+    height: 40px;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+.relative {
+  position: relative;
+  top: 25px;
+  left: 30px;
+}
+
+.absolute {
+  position: absolute;
+  top: 25px;
+  left: 30px;
+}

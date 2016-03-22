@@ -1,0 +1,9 @@
+<h1>Edit a Movie!</h1>
+<form action="/movies/<%= @movie.id %>" method="post">
+  <input type="hidden" name="_method" value="patch" />
+  Title:<br>
+  <input type="text" name="movie[title]" value="<%= @movie.title %>"><br>
+  Rating:<br>
+  <input type="text" name="movie[rating]" value="<%= @movie.rating %>"><br><br>
+  <input type="submit" value="Submit">
+</form>

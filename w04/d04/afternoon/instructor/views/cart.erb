@@ -1,0 +1,15 @@
+
+<h2>Your Wish List</h2>
+
+
+<!-- Check if there's anything in the shopping cart -->
+
+
+<!-- List what the user added so far -->
+<ul>
+<% @items.each do |item| %>
+  <li><%= item %></li>
+<% end %>
+</ul>
+
+<a href="/add_item">Add more stuff!</a>

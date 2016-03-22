@@ -1,0 +1,21 @@
+input[type="radio"], input[type="checkbox"]{
+  margin-right: 1%;
+}
+
+.todo-list{
+  margin-top: 2%;
+}
+
+.crossed{
+  text-decoration: line-through;
+}
+
+.fa-trash-o{
+  margin-left: 1%;
+}
+
+#title-input{
+  height: 60px;
+  padding: 2%;
+  margin: 2% 0;
+}

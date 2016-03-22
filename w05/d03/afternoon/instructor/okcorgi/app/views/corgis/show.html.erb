@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @corgi.name %>
+</p>
+
+<p>
+  <strong>Age:</strong>
+  <%= @corgi.age %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @corgi.user %>
+</p>
+
+<%= link_to 'Edit', edit_corgi_path(@corgi) %> |
+<%= link_to 'Back', corgis_path %>

@@ -1,0 +1,6 @@
+<h1>Top Movies!</h1>
+<% @movies.each do |movie| %>
+  <a href="/movies/<%= movie.id %>"><%= movie.title %></a><br>
+<% end %>
+
+<p><a href="/movies/new" class="btn btn-primary">Add a movie!</a></p>

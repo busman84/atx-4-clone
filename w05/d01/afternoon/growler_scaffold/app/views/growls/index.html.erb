@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Growls</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Message</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @growls.each do |growl| %>
+      <tr>
+        <td><%= growl.message %></td>
+        <td><%= link_to 'Show', growl %></td>
+        <td><%= link_to 'Edit', edit_growl_path(growl) %></td>
+        <td><%= link_to 'Destroy', growl, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Growl', new_growl_path %>

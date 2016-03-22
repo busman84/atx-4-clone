@@ -1,0 +1,35 @@
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+
+<h2>Click Demo</h2>
+
+<a id="google" href="http://www.google.com">Go to the Google</a>
+
+<a href="http://www.msn.com">Go to MSN</a>
+
+<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+<script type="text/javascript">
+
+// Wait until the DOM has loaded 
+$(function() {
+
+  // Safe to use selectors now 
+  $('a').on('click', function(event) {
+    console.log(event);
+    //$(this).attr('href', 'http://www.yahoo.com');
+
+    //event.preventDefault();
+
+    return false;
+  });
+
+
+
+});
+
+</script>
+</body>
+</html>

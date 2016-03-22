@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Media Query Example</title>
+
+
+    <!-- OPTION ONE -->
+    <link rel='stylesheet' media='all' href='normal.css' />
+    <link rel='stylesheet' media='print' href='print.css' />
+    <link rel='stylesheet' media='screen and (min-width: 1200px)' href='large.css' />
+
+
+    <!-- OPTION TWO -->
+    <style>
+      /*normal style*/
+      #header-image {
+          background-image:url('image.gif');
+      }
+
+      /*show a larger image when you're on a big screen*/
+      @media screen and (min-width: 1200) {
+          #header-image {
+              background-image:url('large-image.gif');
+          }
+      }
+
+      /*remove header image when printing.*/
+      @media print {
+          #header-image {
+              display: none;
+          }
+      }
+
+    </style>
+
+  </head>
+
+
+  <body>
+
+  </body>
+</html>

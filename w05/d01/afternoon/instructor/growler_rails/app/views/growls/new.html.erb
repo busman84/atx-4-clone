@@ -1,0 +1,12 @@
+<h1>Growls#new</h1>
+<p>Find me in app/views/growls/new.html.erb</p>
+
+<%= form_for(@growl) do |f| %>
+  <%= f.label :message %><br>
+  <%= f.text_area :message %>
+
+  <%= f.label :author %><br>
+  <%= f.text_area :author %>
+
+  <%= submit_tag("Save") %>
+<% end %>

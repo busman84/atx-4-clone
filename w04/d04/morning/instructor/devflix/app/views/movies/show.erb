@@ -1,0 +1,9 @@
+<h1><%= @movie.title %></h1>
+<h4>Rating: <%= @movie.rating %></h4>
+
+<form action="/movies/<%= @movie.id %>" method="post">
+  <input type="hidden" name="_method" value="delete" />
+  <input type="submit" value="Delete This!">
+</form>
+
+<a href="/movies">Return home!</a>

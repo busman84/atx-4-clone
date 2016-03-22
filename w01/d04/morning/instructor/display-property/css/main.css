@@ -1,0 +1,21 @@
+.outer {
+  width: 500px;
+  border: 2px solid blue;
+}
+
+.inner {
+  width: 200px;
+  border: 2px solid red;
+}
+
+.inline {
+  display: inline;
+}
+
+.block {
+  display: block;
+}
+
+.inline-block {
+  display: inline-block;
+}

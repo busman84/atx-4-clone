@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Clearfix Example 1</title>
+  <!-- 
+  This is a CSS reset. Every browser has their own idea of what the default font, margin, padding sizes are - which makes creating a consistent look across them quite difficult. This CSS helps us with that. 
+  https://necolas.github.io/normalize.css
+  -->
+  <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+  <style type="text/css">
+
+  .container {
+    background: green;
+  }
+
+  .other {
+    background: blue;
+  }
+
+  img {
+    float: right;
+  }
+
+  .clearfix {
+    overflow: auto;
+  }
+
+  </style>  
+</head>
+<body>
+  
+<div class="container clearfix">
+  <span class="label">Some content</span>
+  <img src="http://media0.giphy.com/media/v0x4zvenp9TEc/giphy.gif" alt="">
+  <p>
+    Uh oh... this image is taller than the element containing it, and it's floated, so it's overflowing outside of its container!
+  </p>
+  <div class="other">This is another div container</div>
+</div>
+
+<footer>&copy; 2015 General Assembly</footer>
+
+</body>
+</html>

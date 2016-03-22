@@ -1,0 +1,5 @@
+$(function(){
+
+     $('.liquid-slider').liquidSlider();
+
+});

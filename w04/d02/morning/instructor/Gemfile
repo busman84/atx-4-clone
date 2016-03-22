@@ -1,0 +1,8 @@
+# A sample Gemfile
+source "https://rubygems.org"
+
+# Installs ActiveRecord gem
+gem "activerecord"
+
+# Postgres support
+gem "pg"
